@@ -82,7 +82,7 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_25
   - first:
       213: 4019048365324462938
-    second: 0x72_DungeonTilesetII_v1.3_26
+    second: coin_2
   - first:
       213: -2645911129077382370
     second: coin_3
@@ -796,7 +796,7 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_25
   - first:
       213: 5449790406110137533
-    second: 0x72_DungeonTilesetII_v1.3_26
+    second: coin_2
   - first:
       213: 1369702089669092165
     second: coin_3
@@ -1930,16 +1930,16 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_403
   - first:
       213: 2580894361742178820
-    second: 0x72_DungeonTilesetII_v1.3_404
+    second: trader_idle_1
   - first:
       213: -3342096000531273733
-    second: 0x72_DungeonTilesetII_v1.3_405
+    second: trader_idle_2
   - first:
       213: 2663817371375003467
-    second: 0x72_DungeonTilesetII_v1.3_406
+    second: trader_idle_3
   - first:
       213: 5935001779084844656
-    second: 0x72_DungeonTilesetII_v1.3_407
+    second: trader_idle_4
   - first:
       213: -8735464270460903947
     second: 0x72_DungeonTilesetII_v1.3_408
@@ -8115,7 +8115,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_404
+      name: trader_idle_1
       rect:
         serializedVersion: 2
         x: 368
@@ -8136,7 +8136,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_405
+      name: trader_idle_2
       rect:
         serializedVersion: 2
         x: 384
@@ -8157,7 +8157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_406
+      name: trader_idle_3
       rect:
         serializedVersion: 2
         x: 400
@@ -8178,7 +8178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_407
+      name: trader_idle_4
       rect:
         serializedVersion: 2
         x: 416
@@ -9496,6 +9496,27 @@ TextureImporter:
       bones: []
       spriteID: dad7b1f5445c93df0800000000000000
       internalID: -199911810997191251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 231
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b6746c13786c730800000000000000
+      internalID: 4019048365324462938
       vertices: []
       indices: 
       edges: []

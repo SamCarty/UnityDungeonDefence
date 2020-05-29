@@ -21,7 +21,8 @@ public class Projectile : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other) {
         Hurtable hurtable = other.GetComponent<Hurtable>();
-        if (!other.GetComponent<Attacker>() || !hurtable) return;
+        Attacker attacker = other.GetComponent<Attacker>();
+        if (!attacker || !hurtable) return;
         hasHit = true;
         if (animator) animator.SetTrigger("Destroy");
         Destroy(gameObject, 1f);
