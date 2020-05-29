@@ -34,7 +34,7 @@ public class AttackerSpawner : MonoBehaviour {
     }
 
     IEnumerator SpawnAttacker() {
-        if (isSpawning) yield break;
+        if (isSpawning || !animator) yield break;
         isSpawning = true;
         animator.ResetTrigger("ClosePortal");
         animator.SetTrigger("OpenPortal");
