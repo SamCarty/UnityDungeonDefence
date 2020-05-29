@@ -1495,7 +1495,7 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_258
   - first:
       213: -9070045982322260756
-    second: 0x72_DungeonTilesetII_v1.3_259
+    second: staff_green
   - first:
       213: 3057792643507390724
     second: 0x72_DungeonTilesetII_v1.3_260
@@ -1525,31 +1525,31 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_268
   - first:
       213: -3018242140135685545
-    second: 0x72_DungeonTilesetII_v1.3_269
+    second: wizard_idle_1
   - first:
       213: 1805791872281951756
-    second: 0x72_DungeonTilesetII_v1.3_270
+    second: wizard_idle_2
   - first:
       213: 1666191639925483465
-    second: 0x72_DungeonTilesetII_v1.3_271
+    second: wizard_idle_3
   - first:
       213: -5486625386941165861
-    second: 0x72_DungeonTilesetII_v1.3_272
+    second: wizard_idle_4
   - first:
       213: 5224384523094143008
-    second: 0x72_DungeonTilesetII_v1.3_273
+    second: wizard_walk_1
   - first:
       213: -7601772939673022442
-    second: 0x72_DungeonTilesetII_v1.3_274
+    second: wizard_walk_2
   - first:
       213: 5035205383860745745
-    second: 0x72_DungeonTilesetII_v1.3_275
+    second: wizard_walk_3
   - first:
       213: -567620549381047439
-    second: 0x72_DungeonTilesetII_v1.3_276
+    second: wizard_walk_4
   - first:
       213: -8058213445094018421
-    second: 0x72_DungeonTilesetII_v1.3_277
+    second: wizard_jump
   - first:
       213: 7956916009038660942
     second: 0x72_DungeonTilesetII_v1.3_278
@@ -6225,7 +6225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_259
+      name: staff_green
       rect:
         serializedVersion: 2
         x: 336
@@ -6351,15 +6351,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_269
+      name: wizard_idle_1
       rect:
         serializedVersion: 2
         x: 128
         y: 320
         width: 16
         height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6372,15 +6372,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_270
+      name: wizard_idle_2
       rect:
         serializedVersion: 2
         x: 144
         y: 320
         width: 16
         height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6393,15 +6393,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_271
+      name: wizard_idle_3
       rect:
         serializedVersion: 2
         x: 160
         y: 320
         width: 16
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6414,15 +6414,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_272
+      name: wizard_idle_4
       rect:
         serializedVersion: 2
         x: 176
         y: 320
         width: 16
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6435,15 +6435,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_273
+      name: wizard_walk_1
       rect:
         serializedVersion: 2
         x: 192
         y: 320
         width: 16
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6456,15 +6456,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_274
+      name: wizard_walk_2
       rect:
         serializedVersion: 2
         x: 208
         y: 320
         width: 16
         height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6477,15 +6477,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_275
+      name: wizard_walk_3
       rect:
         serializedVersion: 2
         x: 224
         y: 320
         width: 16
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6498,15 +6498,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_276
+      name: wizard_walk_4
       rect:
         serializedVersion: 2
         x: 240
         y: 320
         width: 16
         height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6519,15 +6519,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_277
+      name: wizard_jump
       rect:
         serializedVersion: 2
         x: 256
         y: 320
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
