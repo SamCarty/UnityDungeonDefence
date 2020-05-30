@@ -4,7 +4,7 @@ public class CoinProducer : MonoBehaviour
 {
     [SerializeField] int coinsAmount = 50;
     
-    void GenerateCoins() {
+    public void GenerateCoins() {
         FindObjectOfType<CoinsDisplay>().AddCoins(coinsAmount);
     }
 }
