@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Hurtable : MonoBehaviour {
     [SerializeField] int health = 100;

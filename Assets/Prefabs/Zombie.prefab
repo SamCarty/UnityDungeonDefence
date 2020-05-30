@@ -92,10 +92,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7828092028378050086}
   - component: {fileID: 7828092028378050089}
-  - component: {fileID: 8536942874743870323}
   - component: {fileID: 1209333887089870733}
-  - component: {fileID: 5455251836803320734}
   - component: {fileID: 8045991341445818227}
+  - component: {fileID: 8536942874743870323}
+  - component: {fileID: 5455251836803320734}
+  - component: {fileID: 4506625964731777670}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -137,19 +138,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8536942874743870323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7828092028378050084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d43612eb6e5cdcb47be5350e101c09be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
 --- !u!61 &1209333887089870733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,21 +164,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.7}
   m_EdgeRadius: 0
---- !u!114 &5455251836803320734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7828092028378050084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6743a6aba3835b46afc2620f827864d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  deathEffect: {fileID: 6786818190302232360, guid: 8b7d3422fa0130f4b9538210a4244f40,
-    type: 3}
 --- !u!50 &8045991341445818227
 Rigidbody2D:
   serializedVersion: 4
@@ -212,3 +185,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8536942874743870323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828092028378050084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43612eb6e5cdcb47be5350e101c09be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5455251836803320734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828092028378050084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6743a6aba3835b46afc2620f827864d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 6786818190302232360, guid: 8b7d3422fa0130f4b9538210a4244f40,
+    type: 3}
+--- !u!114 &4506625964731777670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828092028378050084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb944440b8008a419c584e364de42d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
