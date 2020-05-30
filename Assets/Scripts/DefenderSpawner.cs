@@ -12,6 +12,8 @@ public class DefenderSpawner : MonoBehaviour {
     }
 
     void SpawnDefender() {
+        if (!defender) return;
+        
         CoinsDisplay coinsDisplay = FindObjectOfType<CoinsDisplay>();
         if (!coinsDisplay) return;
         
