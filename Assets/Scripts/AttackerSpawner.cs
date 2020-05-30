@@ -41,7 +41,8 @@ public class AttackerSpawner : MonoBehaviour {
         yield return new WaitForSeconds(portalOpenDelay);
 
         var currentTransform = transform;
-        Instantiate(attackers[0], currentTransform.position, currentTransform.rotation);
+        var newAttacker = Instantiate(attackers[0], currentTransform.position, currentTransform.rotation);
+        newAttacker.transform.parent = transform;
         yield return new WaitForSeconds(portalCloseDelay);
 
         animator.ResetTrigger("OpenPortal");

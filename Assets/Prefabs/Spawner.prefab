@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ada6db708be9749b2756b0c4e69573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumSpawnDelay: 5
-  maximumSpawnDelay: 20
+  minimumSpawnDelay: 1
+  maximumSpawnDelay: 10
   portalOpenDelay: 2
   portalCloseDelay: 1
   attackers:
