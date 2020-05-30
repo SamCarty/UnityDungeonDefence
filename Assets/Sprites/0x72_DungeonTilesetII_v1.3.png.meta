@@ -2381,6 +2381,9 @@ TextureImporter:
   - first:
       213: -644466884522013450
     second: 0x72_DungeonTilesetII_v1.3_554
+  - first:
+      213: -695510590193815666
+    second: 0x72_DungeonTilesetII_v1.3_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -9160,27 +9163,6 @@ TextureImporter:
       bones: []
       spriteID: b9ce579de00b7fd60800000000000000
       internalID: 7923995647206091931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blocker_idle_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 208
-        width: 32
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8fa9fd9dcc0956f0800000000000000
-      internalID: -695510590193815666
       vertices: []
       indices: 
       edges: []
