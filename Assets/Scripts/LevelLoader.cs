@@ -8,44 +8,50 @@ public class LevelLoader : MonoBehaviour {
 
     AudioPlayer audioPlayer;
 
+    public static LevelLoader instance;
+
     void Awake() {
         SetupSingleton();
     }
 
     void SetupSingleton() {
-        if (FindObjectsOfType(GetType()).Length > 1) {
+        if (instance != null) {
             gameObject.SetActive(false);
-            Destroy(gameObject);
+            Destroy(this);
         }
         else {
-            DontDestroyOnLoad(gameObject);
+            instance = this;
+            DontDestroyOnLoad(this);
             audioPlayer = FindObjectOfType<AudioPlayer>();
         }
     }
     
     void Start() {
-        if (SceneManager.GetActiveScene().name == "Splash") LoadMainMenu();
-    }
-
-    public void LoadSplash() {
-        SceneManager.LoadScene("Splash");
-    }
-
-    public void LoadMainMenu() {
-        StartCoroutine(LoadMainMenuWithDelay());
+        if (SceneManager.GetActiveScene().name == "Splash") LoadMainMenuWithDelay();
     }
 
     public void LoadLevel() {
-        // TODO
         SceneManager.LoadScene("Level");
+    }
+    
+    public void LoadGameOver() {
+        SceneManager.LoadScene("Game Over");
     }
 
     public void QuitGame() {
         // TODO
     }
 
-    IEnumerator LoadMainMenuWithDelay() {
-        yield return new WaitForSeconds(splashScreenDelay);
+    public void LoadMainMenu() {
+        StartCoroutine(WaitToLoadMainMenu(false));
+    }
+
+    public void LoadMainMenuWithDelay() {
+        StartCoroutine(WaitToLoadMainMenu(true));
+    }
+
+    IEnumerator WaitToLoadMainMenu(bool shouldDelay) {
+        if (shouldDelay) yield return new WaitForSeconds(splashScreenDelay);
         SceneManager.LoadScene("Menu");
         audioPlayer.PlayMenuLoadedSound();
     }

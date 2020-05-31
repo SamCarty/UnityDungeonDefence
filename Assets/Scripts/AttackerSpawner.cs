@@ -14,12 +14,11 @@ public class AttackerSpawner : MonoBehaviour {
     [SerializeField] float portalCloseDelay = 1f;
     
     [Header("Attackers")]
-    [SerializeField] List<GameObject> attackers;
+    [SerializeField] GameObject[] attackers;
 
     Animator animator;
     bool shouldSpawn = true;
-
-    bool isSpawning = false;
+    bool isSpawning;
 
     void Start() {
         animator = GetComponentInChildren<Animator>();
@@ -34,19 +33,24 @@ public class AttackerSpawner : MonoBehaviour {
     }
 
     IEnumerator SpawnAttacker() {
-        if (isSpawning || !animator) yield break;
+        if (isSpawning || !animator || attackers.Length == 0) yield break;
         isSpawning = true;
         animator.ResetTrigger("ClosePortal");
         animator.SetTrigger("OpenPortal");
         yield return new WaitForSeconds(portalOpenDelay);
 
-        var currentTransform = transform;
-        var newAttacker = Instantiate(attackers[0], currentTransform.position, currentTransform.rotation);
-        newAttacker.transform.parent = transform;
+        InstantiateRandomAttacker();
+        
         yield return new WaitForSeconds(portalCloseDelay);
-
         animator.ResetTrigger("OpenPortal");
         animator.SetTrigger("ClosePortal");
         isSpawning = false;
+    }
+
+    void InstantiateRandomAttacker() {
+        var currentTransform = transform;
+        var index = Mathf.RoundToInt(Random.Range(0, attackers.Length));
+        var newAttacker = Instantiate(attackers[index], currentTransform.position, currentTransform.rotation);
+        newAttacker.transform.parent = transform;
     }
 }

@@ -190,18 +190,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c1c5e3913a447c47b3f3dc2dd797bbb, type: 3}
---- !u!114 &69941676 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 724562874, guid: 0c1c5e3913a447c47b3f3dc2dd797bbb,
-    type: 3}
-  m_PrefabInstance: {fileID: 69941675}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4254c920a58cf464b93daf3e6cfdeebb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +273,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &724562874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 724562874, guid: 0c1c5e3913a447c47b3f3dc2dd797bbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 69941675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4254c920a58cf464b93daf3e6cfdeebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1046312508
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,8 +320,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1.999983, y: 271.59}
-  m_SizeDelta: {x: 284.78, y: 119.01}
+  m_AnchoredPosition: {x: -0.6, y: 271.59}
+  m_SizeDelta: {x: 1050, y: 119}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1046312510
 MonoBehaviour:
@@ -366,8 +366,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 69941676}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 724562874}
+        m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: QUIT TO MAIN MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cbd3e2ee6228014a82ecf6a9d334234, type: 2}
   m_sharedMaterial: {fileID: -2314601249542867392, guid: 4cbd3e2ee6228014a82ecf6a9d334234,
@@ -462,13 +462,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.72354126, y: -0.96539307, z: -0.6274414, w: 0.3731079}
+  m_margin: {x: 4.451935, y: -0.96539307, z: -2.248169, w: 0.3731079}
   m_textInfo:
     textComponent: {fileID: 1046312511}
-    characterCount: 4
+    characterCount: 17
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: PLAY AGAIN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cbd3e2ee6228014a82ecf6a9d334234, type: 2}
   m_sharedMaterial: {fileID: -2314601249542867392, guid: 4cbd3e2ee6228014a82ecf6a9d334234,
@@ -724,13 +724,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.59091187, y: -0.30825806, z: 0.68688965, w: 0.3731537}
+  m_margin: {x: -2.1140137, y: -0.30825806, z: -5.0377197, w: 0.3731537}
   m_textInfo:
     textComponent: {fileID: 4625208461259766913}
-    characterCount: 4
+    characterCount: 10
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -766,8 +766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -2, y: 390.6}
-  m_SizeDelta: {x: 284.78, y: 113.74}
+  m_AnchoredPosition: {x: 2.6, y: 390.6}
+  m_SizeDelta: {x: 675.5, y: 113.74}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &4625208461259766927
 GameObject:
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 69941676}
+      - m_Target: {fileID: 724562874}
         m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
@@ -1053,9 +1053,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'DUNGEON
+  m_text: 'GAME
 
-    DEFENCE'
+    OVER!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cbd3e2ee6228014a82ecf6a9d334234, type: 2}
   m_sharedMaterial: {fileID: -2314601249542867392, guid: 4cbd3e2ee6228014a82ecf6a9d334234,
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_margin: {x: 133.11621, y: -360.98944, z: -533.0801, w: 171.0675}
   m_textInfo:
     textComponent: {fileID: 4625208463042611096}
-    characterCount: 15
+    characterCount: 10
     spriteCount: 0
     spaceCount: 1
     wordCount: 2

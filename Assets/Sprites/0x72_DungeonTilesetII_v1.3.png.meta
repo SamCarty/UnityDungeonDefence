@@ -1864,13 +1864,13 @@ TextureImporter:
     second: 0x72_DungeonTilesetII_v1.3_381
   - first:
       213: -7926252883860807741
-    second: 0x72_DungeonTilesetII_v1.3_382
+    second: heart_full
   - first:
       213: -9116074511309830940
-    second: 0x72_DungeonTilesetII_v1.3_383
+    second: heart_half
   - first:
       213: -5654021441126682947
-    second: 0x72_DungeonTilesetII_v1.3_384
+    second: heart_empty
   - first:
       213: -887027206230116695
     second: 0x72_DungeonTilesetII_v1.3_385
@@ -8034,7 +8034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_382
+      name: heart_full
       rect:
         serializedVersion: 2
         x: 288
@@ -8055,7 +8055,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_383
+      name: heart_half
       rect:
         serializedVersion: 2
         x: 304
@@ -8076,7 +8076,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_384
+      name: heart_empty
       rect:
         serializedVersion: 2
         x: 320

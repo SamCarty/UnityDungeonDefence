@@ -151,3 +151,4 @@ MonoBehaviour:
   portalCloseDelay: 1
   attackers:
   - {fileID: 7828092028378050084, guid: 06e4fea869789ff49857e2fa01a8d614, type: 3}
+  - {fileID: 8913863317549385259, guid: e192432a2ab1cb34095f5c1d09eb87d9, type: 3}
