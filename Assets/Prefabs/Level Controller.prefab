@@ -43,3 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac775581f8585c548a603bea6134f5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelCompleteCanvas: {fileID: 0}
+  levelGameOverCanvas: {fileID: 0}

@@ -14,7 +14,9 @@ public class TreasureHealth : MonoBehaviour {
 
     public void Hurt() {
         health -= 1;
-        if (health < 0) FindObjectOfType<LevelLoaderProxy>().LoadGameOver();
+        if (health < 0) {
+            FindObjectOfType<LevelController>().GameOver();
+        }
         UpdateHeartSprite();
     }
 

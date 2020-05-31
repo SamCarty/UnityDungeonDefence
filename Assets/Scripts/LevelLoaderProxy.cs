@@ -2,8 +2,16 @@
 
 public class LevelLoaderProxy : MonoBehaviour
 {
-    public void LoadLevel() {
-        LevelLoader.instance.LoadLevel();
+    public void ReloadCurrentLevel() {
+        LevelLoader.instance.ReloadCurrentLevel();
+    }
+    
+    public void LoadLevel(int levelNum) {
+        LevelLoader.instance.LoadLevel(levelNum);
+    }
+    
+    public void LoadNextLevel() {
+        LevelLoader.instance.LoadNextLevel();
     }
     
     public void LoadGameOver() {

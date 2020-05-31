@@ -2,6 +2,10 @@
 
 public class AudioPlayer : MonoBehaviour {
     [SerializeField] AudioClip menuLoadedSound;
+    [SerializeField] AudioClip failureSound;
+    [SerializeField] AudioClip victorySound;
+    [SerializeField] AudioClip levelStartSound;
+    
 
     AudioSource audioSource;
 
@@ -20,6 +24,18 @@ public class AudioPlayer : MonoBehaviour {
         }
     }
 
+    public void PlayFailureSound() {
+        PlaySound(failureSound);
+    }
+    
+    public void PlayVictorySound() {
+        PlaySound(victorySound);
+    }
+    
+    public void PlayLevelStartSound() {
+        PlaySound(levelStartSound);
+    }
+    
     public void PlayMenuLoadedSound() {
         PlaySound(menuLoadedSound);
     }

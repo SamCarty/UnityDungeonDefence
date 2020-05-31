@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuLoadedSound: {fileID: 8300000, guid: 14e15f75ff87846e18aa9ba0845c8a96, type: 3}
+  failureSound: {fileID: 8300000, guid: b4ca459c38f1a44b4bd8b479beee0bb0, type: 3}
+  victorySound: {fileID: 8300000, guid: 2fe5ebb02a9ad43bd9b96a0bd45fa0af, type: 3}
+  levelStartSound: {fileID: 8300000, guid: 7bc32505978bb42618b82935d8bd8f00, type: 3}
 --- !u!82 &5539729725743973145
 AudioSource:
   m_ObjectHideFlags: 0

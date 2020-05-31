@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour {
 
     public static LevelLoader instance;
     AudioPlayer audioPlayer;
+    int currentLevel = 1;
     
     void Awake() {
         SetupSingleton();
@@ -29,19 +30,37 @@ public class LevelLoader : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "Splash") LoadMainMenuWithDelay();
     }
 
-    public void LoadLevel() {
-        SceneManager.LoadScene("Level");
+    public void ReloadCurrentLevel() {
+        Time.timeScale = 1f;
+        string level = "Level " + currentLevel;
+        SceneManager.LoadScene(level);
+        FindObjectOfType<AudioPlayer>().PlayLevelStartSound();
+    }
+    
+    public void LoadLevel(int levelNumber) {
+        string level = "Level " + levelNumber;
+        SceneManager.LoadScene(level);
+        FindObjectOfType<AudioPlayer>().PlayLevelStartSound();
+    }
+
+    public void LoadNextLevel() {
+        currentLevel += 1;
+        string level = "Level " + currentLevel;
+        SceneManager.LoadScene(level);
+        FindObjectOfType<AudioPlayer>().PlayLevelStartSound();
     }
     
     public void LoadGameOver() {
         SceneManager.LoadScene("Game Over");
+        FindObjectOfType<AudioPlayer>().PlayFailureSound();
     }
 
     public void QuitGame() {
-        // TODO
+        Application.Quit();
     }
 
     public void LoadMainMenu() {
+        Time.timeScale = 1f;
         StartCoroutine(WaitToLoadMainMenu(false));
     }
 
