@@ -1,8 +1,24 @@
 ﻿using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour {
+    const string DEFENDER_PARENT_NAME = "Defenders";
+    
+    [SerializeField]
+    GameObject defenderParent;
+    
     Defender defender;
 
+    void Start() {
+        CreateDefenderParent();
+    }
+
+    void CreateDefenderParent() {
+        defenderParent = GameObject.Find(DEFENDER_PARENT_NAME);
+        if (!defenderParent) {
+            defenderParent = new GameObject(DEFENDER_PARENT_NAME);
+        }
+    }
+    
     void OnMouseUp() {
         SpawnDefender();
     }
@@ -21,6 +37,7 @@ public class DefenderSpawner : MonoBehaviour {
             coinsDisplay.RemoveCoins(defender.GetCost());
             var position = GetMouseWorldPosition();
             var defenderObject = Instantiate(defender, position, Quaternion.identity);
+            defenderObject.transform.parent = defenderParent.transform;
             SetSortingOrderByRowNumber(defenderObject, position);
         }
     }

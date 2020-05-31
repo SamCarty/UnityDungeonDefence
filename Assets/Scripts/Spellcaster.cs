@@ -1,15 +1,27 @@
 ﻿using UnityEngine;
 
 public class Spellcaster : MonoBehaviour {
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
+    
     [SerializeField] GameObject projectile, spellSpawnPoint;
 
+    GameObject projectileParent;
     AttackerSpawner attackerSpawner;
     Animator animator;
 
     void Start() {
         SetLaneSpawner();
         animator = GetComponent<Animator>();
+        CreateProjectileParent();
     }
+
+    void CreateProjectileParent() {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (!projectileParent) {
+            projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
+        }
+    }
+    
 
     void Update() {
         animator.SetBool("Attack", AttackerInLane());
@@ -30,6 +42,7 @@ public class Spellcaster : MonoBehaviour {
     }
     
     public void Cast() {
-        Instantiate(projectile, spellSpawnPoint.transform.position, transform.rotation);
+        var newProjectile = Instantiate(projectile, spellSpawnPoint.transform.position, transform.rotation);
+        newProjectile.transform.parent = projectileParent.transform;
     }    
 }

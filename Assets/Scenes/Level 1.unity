@@ -2682,6 +2682,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3730545048578311915, guid: e0622e1e85f5a4d43800f86602cb95b4,
         type: 3}
+    - target: {fileID: 1781261303880152735, guid: cba72fc70ee3ffa40a4d9a579065e3a4,
+        type: 3}
+      propertyPath: defenderParent
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5134842813431010956, guid: cba72fc70ee3ffa40a4d9a579065e3a4,
         type: 3}
       propertyPath: m_Size.x
