@@ -19,7 +19,7 @@ public class TreasureHealth : MonoBehaviour {
     }
 
     void UpdateHeartSprite() {
-        if (health < healthSprites.Length) GetComponent<SpriteRenderer>().sprite = healthSprites[health];
+        if (health < healthSprites.Length && health >= 0) GetComponent<SpriteRenderer>().sprite = healthSprites[health];
     }
 
 }

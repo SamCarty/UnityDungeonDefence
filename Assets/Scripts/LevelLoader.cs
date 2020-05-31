@@ -3,13 +3,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
-    
+        
     [SerializeField] float splashScreenDelay = 3f;
 
-    AudioPlayer audioPlayer;
-
     public static LevelLoader instance;
-
+    AudioPlayer audioPlayer;
+    
     void Awake() {
         SetupSingleton();
     }

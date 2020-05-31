@@ -1,10 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Attacker : MonoBehaviour {
     
     float movementSpeed = 1f;
     GameObject attackTarget;
     Animator animator;
+
+    void Awake() {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    void OnDestroy() {
+        FindObjectOfType<LevelController>().AttackerDestroyed();
+    }
 
     void Start() {
         animator = GetComponent<Animator>();

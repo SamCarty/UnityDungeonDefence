@@ -24,6 +24,10 @@ public class AttackerSpawner : MonoBehaviour {
         animator = GetComponentInChildren<Animator>();
         StartCoroutine(SpawnWave());
     }
+
+    public void Stop() {
+        shouldSpawn = false;
+    }
     
     IEnumerator SpawnWave() {
         while (shouldSpawn) {
@@ -33,13 +37,15 @@ public class AttackerSpawner : MonoBehaviour {
     }
 
     IEnumerator SpawnAttacker() {
-        if (isSpawning || !animator || attackers.Length == 0) yield break;
+        if (isSpawning || !animator || attackers.Length == 0 || !shouldSpawn) yield break;
         isSpawning = true;
         animator.ResetTrigger("ClosePortal");
         animator.SetTrigger("OpenPortal");
         yield return new WaitForSeconds(portalOpenDelay);
 
-        InstantiateRandomAttacker();
+        // need to check should spawn is still true before spawning here!
+        // otherwise the game could be over but we spawn another attacker
+        if (shouldSpawn) InstantiateRandomAttacker();
         
         yield return new WaitForSeconds(portalCloseDelay);
         animator.ResetTrigger("OpenPortal");
