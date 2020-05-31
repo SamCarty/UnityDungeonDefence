@@ -73,4 +73,8 @@ public class LevelLoader : MonoBehaviour {
         SceneManager.LoadScene("Menu");
         audioPlayer.PlayMenuLoadedSound();
     }
+
+    public void LoadOptions() {
+        SceneManager.LoadScene("Options");
+    }
 }

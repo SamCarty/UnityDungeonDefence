@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour {
-    [Tooltip("Number of seconds the game should last for")]
+    [Tooltip("Base number of seconds the game should last for (will be adjusted by the difficulty level)")]
     [SerializeField] float gameTime = 10f;
 
     Slider slider;
@@ -12,6 +12,7 @@ public class GameTimer : MonoBehaviour {
     void Start() {
         slider = GetComponent<Slider>();
         levelController = FindObjectOfType<LevelController>();
+        gameTime *= Prefs.GetDifficulty();
     }
 
     void Update() {

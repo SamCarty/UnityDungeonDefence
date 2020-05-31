@@ -6,7 +6,6 @@ public class AudioPlayer : MonoBehaviour {
     [SerializeField] AudioClip victorySound;
     [SerializeField] AudioClip levelStartSound;
     
-
     AudioSource audioSource;
 
     void Awake() {
@@ -21,7 +20,12 @@ public class AudioPlayer : MonoBehaviour {
         else {
             DontDestroyOnLoad(gameObject);
             audioSource = GetComponent<AudioSource>();
+            audioSource.volume = Prefs.GetMasterVolume();
         }
+    }
+
+    public void SetVolume(float volume) {
+        audioSource.volume = volume;
     }
 
     public void PlayFailureSound() {

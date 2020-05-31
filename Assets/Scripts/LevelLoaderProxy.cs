@@ -26,6 +26,10 @@ public class LevelLoaderProxy : MonoBehaviour
         LevelLoader.instance.LoadMainMenu();
     }
 
+    public void LoadOptions() {
+        LevelLoader.instance.LoadOptions();
+    }
+
     void LoadMainMenuWithDelay() {
         LevelLoader.instance.LoadMainMenuWithDelay();
     }
